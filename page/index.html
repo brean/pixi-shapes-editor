@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>pixi-shapes example: animated rect with round edges</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+    </style>
+    <script src="../../lib/pixi.js"></script>
+    <script src="../../bin/pixi-shapes-editor.js"></script>
+</head>
+<body>
+<script>
+    
+    var renderer = PIXI.autoDetectRenderer(800, 600,{backgroundColor : 0xffffff});
+    document.body.appendChild(renderer.view);
+    var stage = new PIXI.editor.Editor();
+    
+    
+    function animate() {
+        // render the stage
+        renderer.render(stage);
+        requestAnimationFrame(animate);
+    }
+    
+    animate();
+</script>
+</body>
+</html>

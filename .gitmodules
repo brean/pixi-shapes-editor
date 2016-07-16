@@ -1,0 +1,6 @@
+[submodule "external/pixi-shapes"]
+	path = external/pixi-shapes
+	url = git@github.com:brean/pixi-shapes.git
+[submodule "external/pixi-layout"]
+	path = external/pixi-layout
+	url = git@github.com:brean/pixi-layout.git
